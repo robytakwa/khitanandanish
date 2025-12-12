@@ -105,8 +105,11 @@
 							<h1 style="font-size: 45px;">Walimatul Khitan<br/>Danish Rama Revinza</h1>
 							<div class="simply-countdown simply-countdown-one"></div>
 							<!-- <p><a href="#" class="btn btn-default btn-sm">Lihat Undangan</a></p> -->
-							<p><a href="#fh5co-couple" class="btn btn-default btn-sm">Lihat Undangan</a></p>
-
+							<audio id="bg-music" loop> 
+							<source src="music/nisa.mp3" type="audio/mpeg">
+						    </audio>
+							<p><a href="#fh5co-couple" onclick="playMusic()" class="btn btn-default btn-sm">Lihat Undangan</a></p>
+						
 						</div>
 					</div>
 				</div>
@@ -130,7 +133,7 @@
 			<div class="couple-wrap animate-box">
 				<div class="couple-half">
 					<div class="groom">
-						<img src="images/danis.jpeg" alt="Romi Rizqi Ramadhan" class="img-responsive">
+						<img src="images/danis2.jpeg" alt="Romi Rizqi Ramadhan" class="img-responsive">
 					</div>
 					<div class="desc-groom">
 						<h3><strong>Danish Rama Revinza</strong></h3>
@@ -160,13 +163,13 @@
 									<h3>Khitan</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>06:00 WIB</span>
+										<span>10:00 WIB</span>
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
-										<span>Minggu, 20 Desember 2025</span>
+										<span>Sabtu, 20 Desember 2025</span>
 									</div>
-									<p>Kp Bojong Ds Sepatnunggal Kec Sodong Hilir Kab Tasikmalaya <br/>(Kediaman Bapak Mimin Muhaemin)</p>
+									<p>Jalan Duri Baru RT 001/RW 006 kelurahan Jembatan besi - kec. Tambora, Jakarta Barat.<br/>(Kediaman Bapak Dwi Sarmanto)</p>
 								</div>
 							</div>
 													</div>
@@ -182,7 +185,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>Kenangan Kami</span>
+					<span>Our Gallery</span>
 					<h2>Danish Rama Revinza</h2>
 					<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
 				</div>
@@ -199,8 +202,8 @@
 							</div>
 						</a>
 					</li>
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/danis.jpeg); ">
-						<a href="images/danis.jpeg" class="color-2">
+					<!-- <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/danis.jpeg); "> -->
+						<a href="images/danis2.jpeg" class="color-2">
 							<div class="case-studies-summary">
 								<!-- <span>Disekolah</span>
 								<h2>Arsya Amrillah</h2> -->
@@ -286,7 +289,7 @@
 										<figure>
 											<img src="images/couple-1.jpg" alt="user">
 										</figure>
-										<span>Mochamad Sofyan,S.Pd.<a href="#" class="twitter"><br/>Guru SDN 1 Season City</a></span>
+										<span>Mochamad Sofyan,S.Pd.<a href="#" class="twitter"><br/>Teman kantor rani</a></span>
 										<blockquote>
 											<p>"Assalamualaikum,
 Semoga ananda Danis diberi kesehatan, cepat pulih, dan selalu berada dalam lindungan Allah.
@@ -314,7 +317,7 @@ Aamiin ya Rabbal ‘alamin."</p>
 										<figure>
 											<img src="images/couple-3.jpg" alt="user">
 										</figure>
-										<span>John Doe <a href="#" class="twitter"><br/>teman kantor</a></span>
+										<span>Syadillah Octavian<a href="#" class="twitter"><br/>Adik</a></span>
 										<blockquote>
 											<p>"MasyaAllah, selamat ya atas khitanan putranya.
 Semoga proses penyembuhannya lancar, diberi kesehatan selalu, dan diberikan masa depan yang cerah.
@@ -345,7 +348,7 @@ Aamiin."</p>
 					<p><strong>Rani Setianingsih 
 						<br/>dan 
 						<br/>
-						Maulana</strong></p>
+						Maulana Yusup</strong></p>
 				</div>
 			</div>
 			<!-- <div class="row animate-box">
@@ -416,6 +419,13 @@ Aamiin."</p>
 	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
+	<script>
+function playMusic() {
+    var audio = document.getElementById("bg-music");
+    audio.play();
+}
+
+</script>
 	<script>
   document.querySelector('a[href="#fh5co-couple"]').addEventListener('click', function (e) {
       e.preventDefault();
